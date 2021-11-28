@@ -1,4 +1,9 @@
-﻿using System;
+﻿using LR2_SPP;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace LR2_SPP
 {
@@ -6,7 +11,9 @@ namespace LR2_SPP
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Faker faker = new Faker();
+
+            TestClass result = faker.Create<TestClass>();
         }
     }
 }
